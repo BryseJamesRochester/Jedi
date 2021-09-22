@@ -1,0 +1,18 @@
+def weekdays = list("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+
+def next = var(weekdays)
+
+while ([next] != nil()) { write(car([next])); next := cdr([next])}
+
+def table = list(cons("one", 1), cons("two", 2), cons("three", 3))
+car(car(table))
+cdr(car(cdr(table)))
+
+def first = lambda(x, y) x
+first(3, {write("executing y"); 10})
+
+def pi = 10
+
+def area = { def pi = 3.13; lambda(radius) radius * radius * pi }
+
+area(pi)
